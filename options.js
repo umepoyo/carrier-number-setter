@@ -2,7 +2,7 @@
 document.getElementById("saveButton").addEventListener("click", function() {
     const defaultCarrier = document.getElementById("defaultCarrier").value;
     chrome.storage.sync.set({ defaultCarrier: defaultCarrier }, function() {
-        alert("Default carrier saved!");
+        alert("配送業者を登録しました");
     });
 });
 
